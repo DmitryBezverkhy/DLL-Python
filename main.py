@@ -8,3 +8,5 @@ lib.FunctionPrint2()
 print()
 lib.FunctionPrint3()
 
+print(ffsdf)
+
