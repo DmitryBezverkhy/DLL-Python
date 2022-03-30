@@ -11,9 +11,7 @@ lib.FunctionPrint2()
 print()
 lib.FunctionPrint3()
 
-
-"Функции"
-lib.sum_int(a, b)  # Складывает два int
-lib.sum_double(a, b)  # Складывает два double
-lib.sum_char(a, b)  # Складывает два char
-lib.is_true(t)  # Проверяет, является ли t = True1
+lib.sum_int(5, 6)  # Складывает два int
+# lib.sum_double(a, b)  # Складывает два double
+# lib.sum_char(a, b)  # Складывает два char
+# lib.is_true(t)  # Проверяет, является ли t = True1
