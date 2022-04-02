@@ -2,16 +2,13 @@ import sys
 from ctypes import *
 
 
-bit_depth_of_Python = "x64" if sys.maxsize > 2 ** 32 else "x86"
+bit_depth_of_Python = "x64" if sys.maxsize > 2 ** 32 else "x86"  # Проверяем кодировку Python
 
-lib = cdll.LoadLibrary(fr"Dll\{bit_depth_of_Python}\DllPastFunction.dll")
-lib.FunctionPrint1()
-print()
-lib.FunctionPrint2()
-print()
-lib.FunctionPrint3()
+lib = cdll.LoadLibrary(fr"Dll\{bit_depth_of_Python}\DllPastFunction.dll")  # Загружаем Dll
 
+lib.window_print("AAAA")  # Выводит в новом окне сообщение
 lib.sum_int(5, 6)  # Складывает два int
-# lib.sum_double(a, b)  # Складывает два double
-# lib.sum_char(a, b)  # Складывает два char
-# lib.is_true(t)  # Проверяет, является ли t = True1
+print()
+lib.sum_double(c_double(10.3), c_double(-7.2))  # Складывает два double
+print()
+print(lib.sum_char(c_wchar_p('a'), c_wchar_p('b')))  # Складывает два char
