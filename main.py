@@ -4,7 +4,7 @@ from ctypes import *
 
 bit_depth_of_Python = "x64" if sys.maxsize > 2 ** 32 else "x86"
 
-lib = cdll.LoadLibrary(fr"Dll\{bit_depth_of_Python}\DllPastFuction.dll")
+lib = cdll.LoadLibrary(fr"Dll\{bit_depth_of_Python}\DllPastFunction.dll")
 lib.FunctionPrint1()
 print()
 lib.FunctionPrint2()
