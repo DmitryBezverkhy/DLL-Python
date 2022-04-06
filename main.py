@@ -11,4 +11,4 @@ lib.sum_int(5, 6)  # Складывает два int
 print()
 lib.sum_double(c_double(10.3), c_double(-7.2))  # Складывает два double
 print()
-print(lib.sum_char(c_wchar_p('a'), c_wchar_p('b')))  # Складывает два char
+lib.sum_char(c_wchar_p("a"), c_wchar_p("b"))  # Складывает два char
